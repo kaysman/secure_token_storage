@@ -1,0 +1,30 @@
+name: secure_token_storage
+description: >-
+  Persists OAuth-style access and refresh tokens with separate expiry
+  timestamps in the platform's secure enclave (Android Keystore / iOS Keychain)
+  via flutter_secure_storage.
+version: 0.1.0
+repository: https://github.com/kaysman/secure_token_storage
+issue_tracker: https://github.com/kaysman/secure_token_storage/issues
+
+topics:
+  - auth
+  - token
+  - oauth
+  - keychain
+  - keystore
+
+environment:
+  sdk: ^3.4.0
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mocktail: ^1.0.4
